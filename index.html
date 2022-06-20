@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Font Awesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  
+
+</head>
+
+   <style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Home {background-color: red;}
+#News {background-color: green;}
+#Contact {background-color: blue;}
+#About {background-color: orange;}
+  </style>
+  <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<style>
+      * {
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .card {
+        height: 50rem;
+        width: 30rem;
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    .card img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .card:hover .details {
+        opacity: 1;
+        height: 100%;
+    }
+
+    .details {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        opacity: 0;
+        transition: 0.5s ease;
+    }
+
+    .details h4 {
+        margin: 0;
+    }
+
+    .details p {
+        margin: 2px 0;
+        font-size: 10px;
+    }
+
+    .social-icons {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .social-icons li {
+        margin: 0 10px;
+    }
+
+    .social-icons li a {
+        color: deepskyblue;
+    }
+  </style>
+<body>
+  <button class="tablink" onclick="openPage('Home', this, 'red')">BOOK A SUITE</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">MENU</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">CONTACT</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">AVAILABILITY</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="C:\Users\Hp Gbenga\Downloads\TheRoyal_Rooms_Russet_Orange_Juice_Horizontal-scaled-min-1536x1024.webp" alt="Mountains" style="width:100%">
+      
+      <h3>Meetings & Retreats</h3>
+      <p>Away from distractions and far from the hustle and bustle of the city, The Royal has a relaxed atmosphere that makes it an ideal escape for productive meetings and gatherings. Our meeting room seats 14 at its boardroom table and is equipped with fully integrated A/V capabilities..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\Hp Gbenga\Downloads\TheRoyal_CounterBar_Cafe_Vertical-min-1152x1536-min-1.webp" alt="Lights" style="width:100%">
+      <h3>EAT & DRINK</h3>
+      <p>We have plenty of places for you to eat and drink, as well as spaces to host your most important get-togethers, from group dinners to business meetings and retreats..</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\Hp Gbenga\Downloads\TheRoyal_Garden_Meal_Sunset_.webp" alt="Nature" style="width:100%">
+      <h3>DINE WITH US</h3>
+      <p>Visit the Boathouse Bar and Quarterdeck restaurant for a range of delicious dishes that champion seasonal Kentish produce.
+
+.</p>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="C:\Users\Hp Gbenga\Downloads\TheRoyal_Rooms_Spa_Sauna-scaled-min-1536x1024.webp" alt="Mountains" style="width:100%">
+      <h3>SPA & GYM</h3>
+      <p>
+Enjoy a massage, facial treatment and more at our spa, all part of a full-service wellness club that includes a sauna and a gym.
+.</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="card">
+        <img src="C:\Users\Hp Gbenga\Downloads\TheRoyal_Garden_Meal_Sunset_.webp" alt="">
+        <div class="details">
+            <h4>ROYALS SUITES</h4>
+            <p>Stay With Us</p>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
